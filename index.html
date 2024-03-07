@@ -7,27 +7,36 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the AI Poem Generator</h1>
-    </header>
-    <main>
-      <input
-        type="text"
-        placeholder="Choose a word to base your poem on"
-        autocomplete="off"
-        autofocus
-      />
-      <input type="submit" />
-      <div>The poets are diligently working on your poem, please wait...</div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/Keira-Bee" target="_blank">Keira Burlinson</a>
-      and is
-      <a href="https://github.com/Keira-Bee/ai-poem-generator" target="_blank"
-        >open-sourced on GitHub.</a
-      >
-    </footer>
-    <link rel="stylesheet" href="src/index.js" />
+    <div class="container">
+      <header>
+        <h1>Welcome to the AI Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Choose a word to base your poem on"
+            autocomplete="off"
+            autofocus
+            class="poem-prompt"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          The poets are diligently working on your poem, please wait...
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Keira-Bee" target="_blank"
+          >Keira Burlinson</a
+        >
+        and is
+        <a href="https://github.com/Keira-Bee/ai-poem-generator" target="_blank"
+          >open-sourced on GitHub.</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
